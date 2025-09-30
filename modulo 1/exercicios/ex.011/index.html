@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Media</title>
+</head>
+<body>
+    <h1>Dynamic image</h1>
+    <p>Try to open this website em different devices or just change the size of you web brownser</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="images/photo-p.png">
+        <source media="(max-width: 1050px )" srcset="images/photo-m.png">
+        <img src="images/photo-g.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Aprendendo a reproduzir audios em HTML5</p>
+    <!-- jeito simples
+    <audio src="midia/By Myself - The Grey Room _ Clark Sims.mp3" autoplay controls></audio> outros formatos aceitos " MPEG WAV OGG " -->
+<audio preload="metadata" autoplay controls loop> <!-- preload usar sempre METADATA vai manter o site mais leve. controls para colocar controlador de musica e loop se quiser manter musica de fundo (NAO RECOMENDADO) -->
+    <source src="midia/By Myself - The Grey Room _ Clark Sims.mp3" type="audio/mpeg">
+    <source src="midia/By Myself - The Grey Room _ Clark Sims.ogg" type="audio/ogg">
+    <source src="midia/By Myself - The Grey Room _ Clark Sims.wav" type="audio/wav">
+    <!-- Arquivos WAV sao muito pesados e nao recomendados para websites -->
+     <!--nesse segundo jeito o navegador vai sempre tentar carregar na ordem, caso nao consiga ele vai tentar o proximo, se nao conseguir nenhum vai mostar a mensagem a segui. voce pode por o audio para download tbm-->
+    Seu navegador não suporta o elemento audio
+</audio>
+</body>
+</html>

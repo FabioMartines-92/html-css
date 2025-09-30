@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @font-face {
+            /*tipos de formato de fontes
+            - opentype - .otf
+            - truetype - .ttf
+            embedded opentype - .eot
+            web open font format - .woff
+            truetype-aat (apple advanced typography) - .ttc
+            -sgv - .svg
+            */
+            font-family: Fontdown;
+            src: url(fonts/Tucsontwostepnf-1lye.ttf) format('truetype');
+        }
+        h1 {
+            font-family: 'fontdown';
+            font-weight: normal;
+            font-size: 4rem;
+        }
+    </style> 
+</head>
+<body>
+    <h1>Fontes Externas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa distinctio blanditiis sint ad error quaerat voluptates! Commodi at quod eveniet pariatur saepe similique quo fugiat modi minus molestias, nihil libero?</p>
+    
+</body>
+</html>
+
+
+<!--Caso precise fazer o download de alguma fonte especifica usar essa regra
+@font-face em seguida escolher um nome para a fonte e depois colocar a url e depois o formato do arquivo sequir exemplo acima-->
