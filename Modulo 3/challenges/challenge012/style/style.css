@@ -12,7 +12,7 @@
     padding: 0;
 }
 html, body{
-   background-color: antiquewhite;
+   background-color: white;
    min-height: 100vh;
    font-family: var(--font-01);
 }
@@ -23,6 +23,8 @@ header{
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
+    border-bottom: 1px solid rgb(0, 0, 0);  
+   
 }
 header h1{
     font-variant: small-caps;
@@ -42,38 +44,45 @@ header a:hover, footer a:hover {
 }
 
 section {
-    margin: auto;
-    max-width: 40vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
-    padding-left: 30px;
+    padding-left: 20px;
     line-height: 2em;
     font-family: var(--font-03);
-    font-size: 1vw; 
+    font-size: 2.5vw; 
+}
+section > p{
+     padding-bottom: 2em;
+        
 }
 .normal {
     background-color: white;
     color: black;
 }
 .image {
-    background-color: rgb(48, 47, 47);    
+    background-attachment: fixed;
+    background-color: rgb(48, 47, 47);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-position: right center;
+
+    
 }
 #img1 {
     background-image: url(../imagens/background001.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-}
+   }
 #img2 {
     background-image: url(../imagens/background002.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    
 }
 .image > p {
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.158);
     color: white;
-    width: 150px;
+    text-shadow: 1px 1px 0px black;
+    
+   
 }
 footer {
     background-color: black;
