@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first Table</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse; /*diminui o espaco fora da borda entre bordas */
+        }
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+            vertical-align: top;
+        }
+        .A{
+            background-color: rgb(238, 238, 181);
+        }
+    </style>
+</head>
+<body>
+    <h1>My first Table</h1>
+    <!--
+    Hierarquia de tabelas
+    
+      table - tabela
+        table row - tr - linhas
+            table data - td - conteudo/dados 
+            
+    prestar muito atencao na hierarquia para nao baguncar a tabela.
+    -->
+    <table>
+        <tr>
+            <td class="A">A1</td>
+            <td>B1</td>
+            <td>C1</td>
+            <td>D1</td>
+        </tr>
+        <tr>
+            <td class="A">A2</td>
+            <td>B2</td>
+            <td>C2</td>
+            <td>D2</td>
+        </tr>
+        <tr>
+            <td class="A">A3</td>
+            <td>B3</td>
+            <td>C3</td>
+            <td>D3</td>
+        </tr>
+        <tr>
+            <td class="A">A4</td>
+            <td>B4</td>
+            <td>C4</td>
+            <td>D4</td>
+        </tr>
+    </table>
+</body>
+</html>
