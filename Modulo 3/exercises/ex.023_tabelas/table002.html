@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big table Exemple </title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        th{
+            background-color: lightslategray;
+            color: white;
+        }
+        td, th, tr {
+            border: 1px solid black
+        }
+        .num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+<!--
+    Anatomia para tabelas grandes
+table
+    thead
+        TR, TD, TH
+    tbody
+         TR, TD, TH
+    tfoot
+         TR, TD, TH
+    -->
+    <h1>
+        Big table Example
+    </h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Posicao</th>
+                <th>Estado</th>
+                <th>Populacao</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1<sup>o</sup> </td>
+                <td>Sao Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+            <tr>
+                <td>2<sup>o</sup> </td>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 791</td>
+            </tr>
+            <tr>
+                <td>3<sup>o</sup> </td>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>4<sup>o</sup></td>
+                <td>Bahia</td>
+                <td class="num">14 873 064</td>
+            </tr>
+            <tr>
+                <td>5<sup>o</sup></td>
+                <td>Parana</td>
+                <td class="num">11 433 957</td>
+            </tr>
+            <tr>
+                <td>6<sup>o</sup></td>
+                <td>Rio Grande Do Sul</td>
+                <td class="num">11 377 239</td>
+            </tr>
+            <tr>
+                <td>7<sup>o</sup></td>
+                <td>Pernambuco</td>
+                <td class="num">9 557 071</td>
+            </tr>
+            <tr>
+                <td>8<sup>o</sup></td>
+                <td>Ceara</td>
+                <td class="num">9 132 078</td>
+            </tr>
+            <tr>
+                <td>9<sup>o</sup></td>
+                <td>Para</td>
+                <td class="num">8 602 865</td>
+            </tr>
+            <tr>
+                <td>10<sup>o</sup></td>
+                <td>Santa Catarina</td>
+                <td class="num">7 164 788</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Populacao total
+                    <td class="num"><strong>156 493 845</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
