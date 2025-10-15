@@ -3,25 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Big table Exemple </title>
+    <title>Big table Example </title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
-        
+        /*
+        voce pode usar a configuracao
+        "position: sticky
+        top: 0
+        backgroung-color: white"
+        para fixar o cabecalho de uma tabela quando for uma tabela muito longa com muitas linhas
+        lembrando que precisa manter o table com position relative para que possa funcionar.
+
+        essa funcao e apenas usada para tabelas grandes, nao faz sentido usar em tabelas pequenas ou sem rolagem de tela.
+
+        */
         table {
             width: 500px;
             border-collapse: collapse;
+        }
+        caption{
+            background-color: lightgray;
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            margin-bottom: 10px;
         }
         th{
             background-color: lightslategray;
             color: white;
         }
         td, th, tr {
-            border: 1px solid black
+            border: 1px solid black;
+            padding: 10px;
         }
+        tbody > tr:nth-child(odd) /* usar essa tag para dar um efeito zebrado. Pode-se usar even or 2n-1 or 2n de acordo com de onde voce dejesa comecar.*/ {
+            background-color: lightgrey;
+        }
+
         .num {
             text-align: right;
+        }
+        #total {
+            background-color:lightslategray;
+            color: white;
         }
     </style>
 </head>
@@ -29,22 +55,26 @@
 <!--
     Anatomia para tabelas grandes
 table
+    caption
     thead
         TR, TD, TH
     tbody
          TR, TD, TH
     tfoot
          TR, TD, TH
+
+         scope row or col : precisa ser usado para ajudar o navegador idenficar se aquele titulo e para uma coluna inteira ou para um linha inteira. obs: (ainda nao entendi exatamente o uso, voltar e pesquisar)
     -->
     <h1>
         Big table Example
     </h1>
     <table>
+        <caption>Tabela Populacional Brasileira</caption>
         <thead>
             <tr>
-                <th>Posicao</th>
-                <th>Estado</th>
-                <th>Populacao</th>
+    <th scope="col" style="width: 5%;">Posicao</th>
+    <th scope="col">Estado</th>
+    <th scope="col"style="width:100px">Populacao</th>
             </tr>
         </thead>
         <tbody>
@@ -96,13 +126,15 @@ table
             <tr>
                 <td>10<sup>o</sup></td>
                 <td>Santa Catarina</td>
-                <td class="num">7 164 788</td>
+                <td class="num" >7 164 788</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Populacao total
-                    <td class="num"><strong>156 493 845</strong></td>
+                <!--
+                colspan and rowspan usa-se para mesclar celulas colunas or linhas-->
+                <th colspan="2">Populacao total</th>
+                    <td class="num" id="total"><strong>156 493 845</strong></td>
             </tr>
         </tfoot>
     </table>
