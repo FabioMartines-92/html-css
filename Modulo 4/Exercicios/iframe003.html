@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe{
+            width: 90vw;
+            height: 560px;
+            border: 2px solid black;
+            margin: auto;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faca uma escolha!</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem doloribus sapiente inventore temporibus facere voluptatem est magni. Cupiditate dolorum quas laborum, vero mollitia earum modi placeat eos cum eligendi perspiciatis.</p>
+    <ul>
+        <!--Nesse exemplo foi usado o "target="frame" essa tag manda o navegador abrir o link dentro do iframe ao inves de um aba externa. usei a tag "name" para linkar a pagina com o iframe-->
+        <li><a href="paginas-extras/pag01.html" target="frame">Primeira Pagina</a></li>
+        <li><a href="paginas-extras/pag02.html" target="frame">Segunda Pagina</a></li>
+        <li><a href="paginas-extras/pag03.html" target="frame">Terceira Pagina</a></li> 
+    </ul>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint placeat rerum unde repellat officiis iusto tenetur. Hic repellendus ad corrupti pariatur accusantium ea est! Voluptates veritatis odio nesciunt. Rem, sapiente? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste animi facilis illum quod. Quia sunt pariatur quo aut ab perferendis, tempore mollitia aspernatur commodi deserunt, praesentium voluptas, magni minima ipsa.</p>
+
+    <!--srcdoc= usa-se para acionar conteudo interno no iframe como por exemplos codigos de html para nao deixar o iframe vazio quando carregado a pagina inicial, pode-se tbm usar imagens-->
+    <iframe srcdoc="<h1>Clique em uma das opcoes acima</h1> <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, illum deleniti. Libero, quia mollitia enim perspiciatis eveniet tempore consequuntur necessitatibus. Tenetur qui nobis, error fugiat culpa totam dolorum mollitia ducimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure quidem enim architecto quis eveniet quam accusantium dicta, nostrum vel nobis ut? Provident neque, dolorum dolor hic quia sint est ea!</p>" frameborder="0" name="frame" >
+        <p>Seu navegador nao e compativel</p>
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nostrum unde expedita hic consequuntur distinctio quia, voluptas odit ratione perferendis vel a et nisi debitis eos, placeat fuga sapiente similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ratione magnam expedita quaerat ea ipsa distinctio, repellendus eveniet, assumenda quod, vel neque animi nihil dolorum consectetur modi iste cum? Recusandae?</p>
+</body>
+</html>
