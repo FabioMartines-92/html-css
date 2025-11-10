@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<style>
+    *{
+        font-family:  Arial, Helvetica, sans-serif;
+    }
+</style>
+<body>
+    <h1>My first Form</h1>
+    <form  method="get" action="cadastro.php" autocomplete="off">
+        <p><label for="iname">Name:</label>
+            <input type="text" name="name" id="iname"></p>
+        <p><label for="isurname">Surname:</label>
+             <input type="text" name="surname" id="isurname"></p>
+        <p><input type="submit" value="Enviar"></p> 
+    </form>
+</body>
+</html>
+<!--
+Value:
+Pode-se usar value="" para escrever oque deseja dentro na caixa de submit, quando eu fiz esse exercicio eu percebi que eu nao preciso colocar nada para aparecer o texto Submit apenas escolhi a funcao submit.
+
+Label:
+e extremamente importante para fazer ligacao entre o que voce esta pedindo e oque vai ser digitado ex. "nome: <-- ______ "
+essa ligacao vai facilitar o navegador salvar os dados certos.
+
+tag "action" foi usada para fazer a ligacao para um arquivo php ou javascript para salvar esses dados. (aprender depois.)
+
+GET:
+um form como padrao ele tem o method GET
+esse metodo usa-se quando voce coletamos informacoes sensiveis como senhas e detalhes de cartao, sendo assim as informacoes apareceram no url do navegador,
+limite de coleta de dados com get e de 3k bytes (+-3k palavras)
+
+POST:
+outro method usado chama-se POST
+esse metodo usa-se quando voce precisa coletar dados importantes evitando que eles aparecam na url do navegador, nao significa que esteja seguro.
+tambem usamos post quando precisamos coletar dados com mais de 3k bytes 
+-->
