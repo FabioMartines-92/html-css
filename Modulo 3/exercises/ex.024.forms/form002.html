@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Test</title>
+</head>
+<body>
+    <h1>Forms Test</h1>
+    <form action="cadastro.php" method="POST" >
+    
+        <p>
+            <label for="iuse">User:</label>
+            <input type="text" name="user" id="isue" required minlength="5" maxlength="20" size="20" placeholder="Id or Email" autocomplete="username">
+        </p>
+    
+    
+        <p>
+            <label for="ipass">Password:</label>
+            <input type="password" name="password" id="ipass" required minlength="5" maxlength="20" size="20" autocomplete="current-password">
+        </p>
+    
+    
+        <p>
+            <input type="submit">
+            <input type="reset">
+        </p>
+    </form>
+</body>
+</html>
+<!--
+Para esse exercicio foi citado algumas novas funcionalidades para formularios
+
+min and maxlength: determina o minino e o maximo de caracteres permitidos nos campos de password or username
+escolha do tamanho e defina por um numero exemplo acima
+
+required: faz com que o campo seja obrigatorio
+
+size: tamanho do campo. definido por um numero.
+
+placeholder: colocar um texto como dica dentro da caixa de preenchimento ex: Id or Email 
+
+autocomplete: geralmente os forms ja tem o autocomplete on como padrao, porem voce precisa identificar cada caixa colocando um autocomplete em cada imput usado especificando oque voce esta usando, assim facilitando para o navegador e para o usuario final
+-->
