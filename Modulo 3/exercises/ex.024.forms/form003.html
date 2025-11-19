@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Grade  (exemplo) </title>
+</head>
+<body>
+    <h1>Student's Mark</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p><label for="iname">First Name: </label>
+            <input type="text" name="first" id="iname" required max="20" placeholder="First Name" autocomplete="name">
+        </p>
+        <p> <label for="isurname">Surname: </label>
+        <input type="text" name="surname" id="isurname" required maxlength="30" placeholder="Surname" autocomplete="name">
+        </p>
+        <p>
+            <label for="igrade">Mark: </label>
+            <input type="number" name="mark" id="imark" min="0" max="10" step="0.1" required>
+        </p>
+        <p>
+            <label for="isub">Subject: </label>
+            <input type="text" name="Subject" id="isub" maxlength="30" placeholder="ex: Geography" required>
+        </p>
+        <p>
+            <label for="iterm">Term: </label>
+            <input type="text" name="term" id="iterm" maxlength="20" required placeholder="ex: First Term">
+            <label for="ifrom">From: </label>
+            <input type="month" name="month" id="ifrom" value="2022-11" required>
+            <label for="ito">To: </label>
+            <input type="month" name="month" id="ito" value="2025-11" required>
+        </p>
+
+        <p>
+            <label for="idate">Today's Date: </label>
+            <input type="date" name="date" id="idate" value="2025-11-19"  required>
+            <label for="itime">Time: </label>
+            <input type="time" name="time" id="itime" required>
+        </p>
+        <p>
+            <input type="submit">
+            <input type="reset" value="Clear">
+        </p>
+
+    </form>
+</body>
+</html>
+
+<!--
+Nesse exercicio foi praticado um pouco mais sobre formularios, o exemplo acima eu criei baseado no sistema de uk com dados em ingles.
+
+foram usados inputs de data. mes. time. 
+relativamente facil apenas precisa ser lembrando e praticado.
+
+unica duvida e se esta correto usar dois input na mesmo paragrafo. checar! 
+
+
+
+-->
