@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest">
+                <option value="" selected>--Escolha um Estado--</option>
+                <optgroup label="Regiao sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">Sao Paulo</option>
+                </optgroup>
+
+                <optgroup label="Regiao Nordeste">
+                    <option value="MA">Maranhao</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissao:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            
+            <datalist id="lstprof">
+                <option >Radiologista</option>
+                <option >Radialista</option>
+                <option >Administrador</option>
+                <option >Atleta</option>
+                <option >Contabilista</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Digite sua mensagem aqui:"></textarea>
+        </p>
+        <p>
+            <input type="submit">
+            <input type="reset" value="Clear">
+        </p>
+    </form>
+    
+</body>
+</html>
+
+<!--
+Nesse exercicio foi visto dois novos atributos
+
+*select/option: usado para criar uma lista pre configurada como o exemplo de cima onde nao ha opcao te escrever apenas selicionar oque ja foi programado.
+
+* Datalist/option: nesse exemplo criamos uma lista onde temos alguma exemplos que pode ser selecionado e pode-se digitar caso nao encontrado na lista. Tbm a cada novo item digitado o navegador vai automaticamente "gravar" o novo item adicionado
+
+*textarea: criar uma columa para mensagens. pode ser personalizada com col numero e row numeros
+seguir exemplos
+
+-->
