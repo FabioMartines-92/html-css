@@ -1,0 +1,23 @@
+/* Estilo para impressão */
+* {
+    margin: 0;
+    padding: 0;
+}   
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4em;
+    line-height: 1.5em;
+    padding: 10px;
+}
+menu {
+    display: none;
+}
+article {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+article::after {
+    content: "\A\A--- Artigo empresso atraves do site www.blablabla.com ---";
+    
+}

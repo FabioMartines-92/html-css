@@ -1,0 +1,48 @@
+/* Estilo para a tela */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    font-size: 1em;
+}
+body h1 {
+    color: #444;
+    margin-bottom: 20px;
+    text-align: center;
+}
+menu {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+}
+menu ul {
+    text-align: center;
+    list-style: none;
+}
+menu li {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+}
+article {
+    width: 600px;
+    display: block;
+    margin: auto;
+
+}
+
+footer {
+    background-color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+}  
