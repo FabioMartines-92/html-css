@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* typycal device breakepointes
+-------------------------------
+Small (mobile)	0px – 767px
+Medium (tablet)	768px – 1023px
+Large (desktop)	1024px – 1279px
+XL (large desktop)	1280px+
+ */
+
+ @media screen and (min-width: 768px) { /* Exibe o menu, escondendo o span#burger. */
+  
+    span#burger {
+        display: none;
+    }
+   menu {
+        display: block;
+    }
+
+    menu > ul> li {
+        display: inline-block;
+    }
+   
+    main {
+        width: 768px;
+    }
+ }
