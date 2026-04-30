@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralize using Flex box</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: aquamarine;
+        }
+
+        main {
+            background-color: bisque;
+            height: 100vh;
+            width: 100vw;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+
+            /*Essas configuracoes usadas para centralizar um item, lembrando que precisa sempre identifica o "pai"do item que queremos identificar */
+        }
+
+        section {
+            background-color: azure;
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Login Screen</h1>
+        </section>
+    </main>
+    
+</body>
+</html>
