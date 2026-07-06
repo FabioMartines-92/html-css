@@ -8,13 +8,17 @@
     <style>
         div.conteiner {
             display: flex;
-            background-color: aqua;
+            background-color: lightblue;
             flex-flow: row wrap;/* flex-flow e o shorthand para as funcionalidades do flex box, lembrando sempre de seguir os axis */
-            height: 100px;
+            
+            align-content: flex-start; /*align-content alinhas os itens no eixo vertical. so pode ser usado com flex-flow: wrap */
+            height: 400px;
         }
 
         div.item {
-            flex: auto; /* Flex auto tira o espaco fora da caixa, deixando tudo alinhado com o tamanho do conteiner*/
+            background-color: antiquewhite;
+            padding: 40px;
+
             text-align: center;
             border: 1px solid black;
         }
