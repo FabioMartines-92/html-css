@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+
+    <style>
+        div.conteiner {
+            display: flex;
+            background-color: aqua;
+            flex-flow: row nowrap;/* flex-flow e o shorthand para as funcionalidades do flex box, lembrando sempre de seguir os axis */
+            height: 100px;
+        }
+
+        div.item {
+            background-color: aliceblue;
+            text-align: center;
+            border: 1px solid black;
+            flex-basis: 250px; /* Determina o tamanho do item*/
+            /*flex-shrink: 1;  Determina se o item vai encolher ou nao, por padrao ele encolhe (1) se nao quiser que encolhe use (0) */
+            /*flex-grow: 1;  Determina se o item vai aumentar ou nao. por padrao ele nao aumenta (0) se quiser que ele aumente use (1)*/
+        }
+
+        div#cxA {
+            flex-shrink: 2;
+            flex-grow: 1;
+        }
+
+        div#cxB {
+            flex-shrink: 1;
+            flex-grow: 2;
+        }
+
+        div#cxC {
+            flex-shrink: 0;
+            flex-grow: 0;
+
+        }
+ /*
+flex-shrink e flex-grown seria uma boa combinacao para criar item adaptativos e fluidos.
+lembrando que e importante usar (flex-flow row nowrap) 
+ 
+Quando usar um numero maior que 1 nessas configuracoes o item vai crescer ou diminuir na proporcao e nao no tamanho exato ex: se usar 1 e no outro item 2 o segundo item vai aumentar/diminuir o tamanho 2x mais rapido e nao exatamente vai ser 2x maior/menor. 
+ */
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxA">Exemplo de Bloco A</div>
+        <div class="item" id="cxB">Exemplo de Bloco B</div>
+        <div class="item" id="cxC">Exemplo de Bloco C</div>
+        
+    </div>
+    
+</body>
+</html>
+
+<!--
+Flexible box e usado para adaptar os conteiners dentro de um conteiner maior (PAI)
+assim nao precisando de configuracao extras.
+
+
+-->
